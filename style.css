@@ -1,6 +1,0 @@
-h1{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif; /*se o computador nao tiver Arial, vai Helvetica, se nao,a sans-serif do OS.*/
-    background-color: orange;
-    padding: 0.5rem; /*suspiro, deixa o laranja maior, menos colocado na palavra*/
-}
