@@ -2,6 +2,7 @@
 #include <locale.h>
 int main()
 {
+    //Para a acentuação, usar chcp 65001 no terminal
     setlocale(LC_ALL,"Portugues");
     int item,cacho,tcacho=0,x_sala,tx_sala=0,x_bacon,tx_bacon=0,misto,tmisto=0,sala,tsala=0,agua,tagua=0,refri,trefri=0;
     int nu1,n1,q1,n2,q2,nu2;
@@ -59,33 +60,33 @@ int main()
     }while(item>=1 && item<=7);
 
     if (tcacho>=1){
-        printf("%d cachorro-quente 5.00\n",tcacho);
+        printf("%d cachorro-quente por %d reais\n",tcacho,tcacho*5);
         n1=1;
         q1=tcacho;
     }
     if (tx_sala>=1){
-        printf("%d X-salada 8.79\n",tx_sala);
+        printf("%d X-salada por %.2f reais\n",tx_sala,tx_sala*8.79);
         n2=2;
         q2=tx_sala;
     }
     if (tx_bacon>=1){
-        printf("%d X-bacon 9.99\n",tx_bacon);
+        printf("%d X-bacon por %.2f reais\n",tx_bacon,tx_bacon*9.99);
     }
     if (tmisto>=1){
-        printf("%d misto 6.89\n",tmisto);
+        printf("%d misto por %.2f reais\n",tmisto, tmisto*6.89);
     }
     if (tsala>=1){
-        printf("%d salada 4.89\n",tsala);
+        printf("%d salada por %.2f reais\n",tsala,tsala*4.80);
     }
     if (tagua>=1){
-        printf("%d água 3.49\n",tagua);
+        printf("%d água por %.2f reais\n",tagua,tagua*3.49);
     }
     if (trefri>=1){
-        printf("%d refrigerante 4.99\n",trefri);
+        printf("%d refrigerante por %.2f reais\n",trefri, trefri*4.99);
     }
 
     total= (tcacho*5 + tx_sala*8.79 + tx_bacon*9.99 + tmisto*6.89 + tsala*4.80 + tagua*3.49 +trefri*4.99);
-
+    printf("Total: %f",total);
 
     return 0;
 } 
