@@ -8,7 +8,7 @@ int main()
         altc= altc+2;
     }
     printf("%.2f\n",anos);
-    printf("%.2f metros\n",altz/100);
+    printf("%.2f metros é\n",altz/100);//chcp 65001 para o portugues
     printf("%.2f metros",altc/100);
     return 0;
 }
