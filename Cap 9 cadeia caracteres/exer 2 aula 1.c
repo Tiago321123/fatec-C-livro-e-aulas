@@ -29,7 +29,7 @@ int main()
           posi=n;
           printf("posição: %d\n",posi);
         }
-      }
+    }
     return 0;
 }/*
     char frase[100];
