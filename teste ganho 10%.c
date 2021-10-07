@@ -8,9 +8,9 @@ int main(){
     scanf("%f%*c",&anos);
     for(n=0;n<anos;n++){
     if(n==0){
-    soma= valor*2;/* (valor*0.10)*vezes; */
+    soma= valor + valor*0.02;/* (valor*0.10)*vezes; */
     }
-    else soma=soma*2;
+    else soma=soma + soma*0.02;
     }
     printf("Valor: %.2f\n",soma);
 
