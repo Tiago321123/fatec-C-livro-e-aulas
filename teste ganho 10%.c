@@ -13,6 +13,7 @@ int main(){
     else soma=soma + soma*0.02;
     }
     printf("Valor: %.2f\n",soma);
+    printf("Valorizacao: %f",(soma/valor)*100);
 
     return 0;
 }
